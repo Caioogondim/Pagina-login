@@ -9,7 +9,7 @@
     display: flex;
     gap: 5px;
     align-items: end;
-    padding-right: 10%
+    padding-right: 80px;
 }
 
 #login {
@@ -59,14 +59,14 @@ input {
     border-radius: 10px;
     margin-top: 10px;
     width: 240px;
-    height: 40px;
-    
+    height: 40px; 
+    border: 0cap;   
 }
 
 #bike-login {
     position: absolute;
     z-index: 1;
-    border-radius: 15px;
+    border-radius: 2px;
 }
 
 .box-form {
@@ -99,4 +99,77 @@ input {
     text-align: end;
     padding: 70px 120px 15px 40px;
     position: absolute;
+}
+
+@media (max-width: 440px) {
+    #bike-login {
+     opacity: 5%;
+     
+    }
+
+    .box-form {
+        background-color: #040404;
+        border-radius: 50px;
+        height: 480px;
+        width: 355px;
+        box-shadow: 0px 6px 8px rgb(68, 68, 68);
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+        input {
+            opacity: 35%;
+            width: 300px;
+            height: 40px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            text-align: center;
+            border: 0cap;
+            padding-left: 90px;
+        }
+
+        .form {
+            box-sizing: border-box;
+            padding: 40px;
+            width: 300px;
+            height: 500px;
+            flex-direction: column;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            padding-right: 0px;
+            padding-left: opx;
+        }
+
+        #login {
+            font-family: Gemstone;
+            font-size: 75px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding-left: 30px;
+            
+            
+        }
+
+        .icones {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: end;
+            z-index: 1;
+            padding: 10px 10px 10px 40px;
+            
+        }
+
+        #footer{
+            font-family: Gemstone;
+            font-size: 16px;
+            color: rgb(68, 68, 68);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            flex-direction: row-reverse;
+            text-align: end;
+            padding: 45px 100px 10px 20px;
+            position: absolute;
+        }
 }
